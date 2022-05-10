@@ -1,0 +1,349 @@
+/*stylesheet*/
+
+/* vars */
+:root {
+  background-color: #000;
+  body-color: #fff;
+}
+
+.white {
+  font-display: white;
+}
+
+body {
+  margin: 0;  
+  font-family: 'Playfair Display', monospace;
+  font-weight: 300;
+  background-color: black;
+  color: white;
+}
+
+.middle {
+  margin-top: 0;
+  margin-bottom: 1em;
+  text-align: Center;
+}
+
+.sides {
+  margin-top: 0;
+  margin-bottom: 1em;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+h1, h2, p {
+  margin-top: 0;
+  margin-bottom: 1em;
+  color: white;
+}
+
+h3 {
+  color: white;
+}
+
+
+h5{
+  font-weight: 400;
+	font-size: 50px;
+	text-align: center;
+	color: white;
+  font-family:Playfair Display;
+  font-style: bold;
+  text-decoration: underline;
+}
+
+h1, h2 {
+  font-weight: 700;
+  color: white;
+}
+
+#wrapper {
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+#main, #footer, #masthead {
+  margin: 2em 2em 0;
+}
+
+#logo a {
+  text-decoration: none;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+}
+
+#logo h1 {
+  letter-spacing: 1px;
+  font-weight: 300;
+  font-size: 1.2rem;
+  margin-bottom: 0;
+}
+
+#logo img {
+  margin-right: .25rem;
+  height: 3.6rem;
+  width: auto;
+}
+
+#topnav ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+  display: flex; 
+  flex-wrap: wrap;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+}
+
+#topnav ul {
+  display: flex;
+}
+
+#topnav li {
+  margin-right: 2em;
+  margin-bottom: 0;
+}
+
+#topnav li:first-child {
+  margin-right: auto;
+}
+
+#topnav li:last-child {
+  margin-right: 0;
+}
+
+#topnav li a {
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+/* INTRO */
+
+#intro {
+  display: flex;
+  align-items: center;
+  height: 70vh;
+}
+
+#work h3, #page h3 {
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-bottom: 2rem;
+}
+
+#work h3 a, #page h3 a {
+  color: var(--body-color);
+  text-decoration: none;
+}
+
+.work-item {
+  overflow: hidden;
+  position: relative;
+  width: 100%; 
+}
+
+.work-item .inner .work-inside {
+  color: #fff;
+  padding: 2rem;
+  width: 100%;
+  background-color: var(--body-color);
+  text-align: left;
+}
+
+.work-item .inner .work-inside p:last-child {
+  margin-bottom: 0;
+}
+
+.work-item .inner:hover .work-inside {
+  opacity: 1;
+}
+
+.work-item img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* PAGE */
+
+#page {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.page-item .date-holder {
+  margin-bottom: .25em;
+}
+
+.page-item img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.page-item .caption {
+  font-size: .75rem;
+  color: #666666;
+  display: block;
+  width: 100%;
+  margin-top: .5rem;
+  margin-bottom: 2rem;
+  text-align: right;
+}
+
+.page-item .date {
+  margin: 0;
+  font-size: .85rem;
+  padding: 0 4px;
+  color: var(--background-color);
+  display: inline-block;
+  background-color: var(--body-color);
+}
+
+.page-item h2 a {
+  color: var(--body-color);
+  text-decoration-color: transparent; 
+  transition: text-decoration-color .3s ease-in-out;
+}
+
+.page-item h2 a:hover {
+  color: var(--body-color);
+  text-decoration-color: var(--body-color); 
+}
+
+.photo{
+  padding-left: 17em;
+  padding-right: 17em;
+  padding-bottom: 2em;
+}
+
+
+/*FOOTER*/
+
+#footer {
+  padding: 2em;
+  text-align: center;
+  font-size: .85rem;
+  color: #fff;
+}
+
+#footer p:last-child {
+  margin-bottom: 0;
+}
+
+/*RESPONSIVE*/
+
+/* for variable type sizing */
+@media screen and (min-width: 320px) {
+  body {
+    font-size: calc(12px + 4 * ((100vw - 320px) / 960));
+  }
+}
+
+@media all and (max-width: 699px) { 
+
+  #intro-holder h1 {
+    font-size: 2.2rem
+  }
+
+  .work-item .inner .work-inside {
+    opacity: 1;
+  }
+
+}
+
+@media all and (min-width: 700px) {
+
+  #intro-holder h1 {
+    font-size: 3.2rem
+  }
+
+  #intro {
+    height: 70vh;
+  }
+
+  #intro-holder {
+    padding: 0 5em;
+  }
+
+/* Underline */
+
+.thin {
+  text-decoration-thickness: 1px;
+}
+
+}
+
+/* Place the navbar at the bottom of the page, and make it stick */
+.navbar {
+  background-color: #000;
+  overflow: hidden;
+  position: center;
+  bottom: 0;
+  width: 100%;
+}
+
+/* Style the links inside the navigation bar */
+.navbar a {
+  float: left;
+  display: block;
+  color: #fff;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 11px;
+}
+
+/* Change the color of links on hover */
+.navbar a:hover {
+  background-color: lightpink;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.navbar a.active {
+  background-color: #000;
+  color: white;
+}
+
+/*Navigation bar for main website*/
+.navigate {
+  background-color: #000;
+  position: center;
+  bottom: 0;
+  width: 100%;
+}
+
+/* Style the links inside the navigation bar */
+.navigate a {
+  float: left;
+  display: block;
+  color: #fff;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 11px;
+}
+
+/* Change the color of links on hover */
+.navigate a:hover {
+  background-color: lightpink;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.navigate a.active {
+  background-color: #000;
+  color: white;
+}
+
+/*Text Highlight Selection Color*/
+::Selection{
+  Background: pink;
+  Color: #FFFFFF;
+}
+
+
