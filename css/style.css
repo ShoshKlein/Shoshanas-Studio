@@ -2,20 +2,20 @@
 
 /* vars */
 :root {
-  background-color: #000;
-  body-color: #fff;
+  background-color: #fff;
+  body-color: #000;
 }
 
 .white {
-  font-display: white;
+  font-display: black;
 }
 
 body {
   margin: 0;  
   font-family: 'Playfair Display', monospace;
   font-weight: 300;
-  background-color: black;
-  color: white;
+  background-color: white;
+  color: black;
 }
 
 .middle {
@@ -34,27 +34,26 @@ body {
 h1, h2, p {
   margin-top: 0;
   margin-bottom: 1em;
-  color: white;
+  color: black;
 }
 
 h3 {
-  color: white;
+  color: black;
 }
 
 
 h5{
-  font-weight: 400;
-	font-size: 50px;
+  font-weight: 300;
+	font-size: 40px;
 	text-align: center;
-	color: white;
+	color: black;
   font-family:Playfair Display;
   font-style: bold;
-  text-decoration: underline;
 }
 
 h1, h2 {
   font-weight: 700;
-  color: white;
+  color: black;
 }
 
 #wrapper {
@@ -122,10 +121,9 @@ h1, h2 {
 
 /* INTRO */
 
-#intro {
-  display: flex;
+#begin{
   align-items: center;
-  height: 70vh;
+  display: flex;
 }
 
 #work h3, #page h3 {
@@ -311,7 +309,6 @@ h1, h2 {
 
 /*Navigation bar for main website*/
 .navigate {
-  background-color: #000;
   position: center;
   bottom: 0;
   width: 100%;
@@ -321,7 +318,6 @@ h1, h2 {
 .navigate a {
   float: left;
   display: block;
-  color: #fff;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -344,6 +340,20 @@ h1, h2 {
 ::Selection{
   Background: pink;
   Color: #FFFFFF;
+}
+
+.float-left {
+    width: 350px; 
+    float: left; 
+    margin-left: 1em;
+    margin-right: 0em;
+}
+
+.float-right {
+    width: 350px; 
+    float: right; 
+    margin-right: 1em;
+    margin-left: 0em;
 }
 
 
