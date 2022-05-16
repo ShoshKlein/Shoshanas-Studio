@@ -345,14 +345,14 @@ h1, h2 {
 .float-left {
     width: 350px; 
     float: left; 
-    margin-left: 1em;
+    margin-left: 0em;
     margin-right: 0em;
 }
 
 .float-right {
     width: 350px; 
     float: right; 
-    margin-right: 1em;
+    margin-right: 0em;
     margin-left: 0em;
 }
 
