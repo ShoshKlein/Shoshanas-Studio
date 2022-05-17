@@ -76,6 +76,46 @@
     </div>
 		</div>
 
+		<div class="navbar">
+  			<a href="#Home">Shoshana's Studio</a>
+  			<a class="active"> | </a>
+  			<a href="mailto:Shoshanakphoto@gmail.com">Shoshanakphoto@gmail.com</a>
+  			<a class="active"> | </a>
+  			<a href="http://instagram.com/_u/ShoshanasStudio/" target="_blank"> Insta</a>
+  			<a class="active"> | </a>
+  			<a href="tel:+2012206844">201-220-6844</a>
+		</div>
+
 	</body>
+
+<!--Bottom Navbar Centered and sidescroll-->
+<script>
+
+const observerOptions = {
+       root: null,
+       threshold: 0,
+       rootMargin: '0px 0px -40px 0px'
+   };
+
+const observer = new IntersectionObserver(entries => {
+       entries.forEach(entry => {
+           if (entry.isIntersecting) {
+               entry.target.classList.add('in-view');
+               observer.unobserve(entry.target);
+           }
+       });
+   }, observerOptions);
+
+window.addEventListener('DOMContentLoaded', (event) => {
+
+const images = Array.from(document.getElementsByClassName('fadeup'));
+
+for (let image of images) {
+  observer.observe(image);
+}
+
+});
+			
+</script>
 
 </html>

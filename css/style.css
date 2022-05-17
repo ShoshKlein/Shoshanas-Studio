@@ -123,7 +123,7 @@ h1, h2 {
 
 #begin{
   align-items: center;
-  display: flex;
+  display: inline-block;
 }
 
 #work h3, #page h3 {
@@ -244,7 +244,7 @@ h1, h2 {
 @media all and (max-width: 699px) { 
 
   #intro-holder h1 {
-    font-size: 2.2rem
+    font-size: 2.2rem;
   }
 
   .work-item .inner .work-inside {
@@ -347,6 +347,7 @@ h1, h2 {
     float: left; 
     margin-left: 0em;
     margin-right: 0em;
+    margin-bottom: 1em;
 }
 
 .float-right {
@@ -354,6 +355,13 @@ h1, h2 {
     float: right; 
     margin-right: 0em;
     margin-left: 0em;
+    margin-bottom: 1em;
 }
 
+/*Bottom Navbar Centered and sidescroll*/
+
+ .in-view {
+     transform: none;
+     opacity: 1;
+ }
 

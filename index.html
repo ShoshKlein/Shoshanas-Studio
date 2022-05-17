@@ -48,13 +48,9 @@
 			
 
 		<!--This is the big top box with a quote -->
-	      <div id="begin" class="width-12-12-m width-12-12">
-	        <div id="intro-holder">
-	          <h5 class="middle">Welcome to Shoshana's Studio</h5>
-
-	        </div>
-	      </div>
-
+		<div>
+	      <h5 class="middle">Welcome to Shoshana's Studio</h5>
+	  	</div>
 			<!--This is the navbar for section of website-->
 	    		<div class="middle" class="navigate" style="background-color: black; color: white; font-weight: bold;">
   					<a href="about.html">About</a>
@@ -66,9 +62,9 @@
 
 
 	        <div>
-	        	<img class="float-left" style="max-width: 45%;" class="width-6-12-m width-6-12" src="images/left_photo.jpg"/>
+	        	<img class="float-left" style="width: 49%;" class="width-6-12-m width-6-12" src="images/left_photo.jpg"/>
 	        
-	        	<img class="float-right" style="max-width: 45%;" class="width-6-12-m width-6-12" src="images/right_photo.jpg"/>
+	        	<img class="float-right" style="width: 49%;" class="width-6-12-m width-6-12" src="images/right_photo.jpg"/>
 	        </div>
 	      </div>
     	</div>
@@ -87,5 +83,20 @@
 
 
 	</body>
+
+<!--Bottom Navbar Centered and sidescroll-->
+<script>
+
+const observer = new IntersectionObserver(entries => {
+       entries.forEach(entry => {
+           if (entry.isIntersecting) {
+               entry.target.classList.add('in-view');
+               observer.unobserve(entry.target);
+           }
+       });
+   }, 
+
+			
+</script>
 
 </html>
